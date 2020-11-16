@@ -13,7 +13,7 @@ const generateData = (amount, min = 0, max = 1000) => {
   return generated
 }
 
-lineChart(select('svg'), {
+new lineChart(select('svg'), {
   lineData: generateData(200, 500, 5000),
   margin: {
     top: 10,
